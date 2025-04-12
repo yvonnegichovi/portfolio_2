@@ -11,23 +11,7 @@ body {
 	z-index: 1000;
 }
 
-.nav-tabs {
-	list-style: none;
-	display: flex;
-	justify-content: left;
-	margin: 0;
-	padding: 1rem;
-	gap: 2rem;
-}
-
-.nav-tabs li a {
-	text-decoration: none;
-	color: #333;
-	font-weight: bold;
-	cursor: pointer;
-}
-
-.nav-tabs li a:hover {
+.navbar:hover {
 	color: #0056b3;
 }
 

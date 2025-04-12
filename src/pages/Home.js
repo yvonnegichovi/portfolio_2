@@ -1,29 +1,12 @@
 import React from 'react';
-import { Link } from 'react-scroll'; // Import scroll functionality
+import { Link } from 'react-router-dom'; // Import router
 import './Home.css'; // Import the CSS file
 
 function Home () {
   return (
 	  <>
-	  <nav className="navbar">
-	  <ul className="nav-tabs">
-	  <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
-	  <li><Link to="about" smooth={true} duration={500}>About</Link></li>
-	  <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
-	  <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
-	  </ul>
-	  </nav>
-
 	  <h1>Welcome to My Portfolio</h1>
           <p>Showcasing my skills, projects, and contact info.</p>
-	  <section id="about">
-	  <h2>About</h2>
-	  <p>
-	  I am a passionate Software Engineer who loves building clean efficient solutions.
-	  Skilled in Javascript, Python, React, Node.js, and backend systems.
-	  </p>
-	  </section>
-
 	  <section id="projects">
 	  <h2>Projects</h2>
 	  <ul>
