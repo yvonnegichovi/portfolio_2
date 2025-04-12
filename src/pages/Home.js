@@ -1,12 +1,38 @@
 import React from 'react';
+import { Link } from 'react-scroll'; // Import scroll functionality
+import './Home.css'; // Import the CSS file
 
 function Home () {
   return (
 	  <div>
 	  <header>
-	  <h1>Welcome to My Portfolio</h1>
-	  <p>Showcasing my skills, projects, and contact info.</p>
+
+	  {/* Navigation Menu */}
+	  <nav>
+	  <ul>
+	  <li>
+	  Home
+	  </li>
+	  <li>
+	  <Link to="about" smooth={true} duration={500}>
+	  About
+	  </Link>
+	  </li>
+	  <li>
+	  <Link to="projects" smooth={true} duration={500}>
+	  Projects
+	  </Link>
+	  </li>
+	  <li>
+	  <Link to="contact" smooth={true} duration={500}>
+	  Contact
+	  </Link>
+	  </li>
+	  </ul>
+	  </nav>
 	  </header>
+	  <h1>Welcome to My Portfolio</h1>
+          <p>Showcasing my skills, projects, and contact info.</p>
 	  <section id="about">
 	  <h2>About</h2>
 	  <p>

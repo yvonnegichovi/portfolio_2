@@ -1,7 +1,7 @@
 import React from 'react';
 
 function About () {
-  return <h2>About me!</h2>;
+  return <h2>Yvonne Gichovi</h2>;
 }
 
 export default About;
