@@ -4,33 +4,16 @@ import './Home.css'; // Import the CSS file
 
 function Home () {
   return (
-	  <div>
-	  <header>
-
-	  {/* Navigation Menu */}
-	  <nav>
-	  <ul>
-	  <li>
-	  Home
-	  </li>
-	  <li>
-	  <Link to="about" smooth={true} duration={500}>
-	  About
-	  </Link>
-	  </li>
-	  <li>
-	  <Link to="projects" smooth={true} duration={500}>
-	  Projects
-	  </Link>
-	  </li>
-	  <li>
-	  <Link to="contact" smooth={true} duration={500}>
-	  Contact
-	  </Link>
-	  </li>
+	  <>
+	  <nav className="navbar">
+	  <ul className="nav-tabs">
+	  <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
+	  <li><Link to="about" smooth={true} duration={500}>About</Link></li>
+	  <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
+	  <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
 	  </ul>
 	  </nav>
-	  </header>
+
 	  <h1>Welcome to My Portfolio</h1>
           <p>Showcasing my skills, projects, and contact info.</p>
 	  <section id="about">
@@ -55,7 +38,7 @@ function Home () {
 	  <p>GitHub: <a href="https://github.com/yvonnegichovi" target="_blank" rel="noreferrer">github.com/yvonnegichovi</a></p>
 	  <p>LinkedIn: <a href="https://www.linkedin.com/in/yvonne-gichovi-2b0753223/" target="_blank" rel="noreferrer">linkedin.com/in/yvonnegichovi</a></p>
 	  </section>
-	  </div>
+	  </>
   );
 }
 
