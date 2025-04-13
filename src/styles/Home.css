@@ -1,0 +1,23 @@
+/* General body and page layout */
+
+body {
+	font-family: Arial, san-serif;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: white;
+}
+
+section {
+	padding: 40px 20px;
+	margin: 20px 0;
+}
+
+section h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+section p, section ul {
+	font-size: 16px;
+}

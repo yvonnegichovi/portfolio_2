@@ -7,12 +7,12 @@ function Navbar () {
 
   return (
     <nav className='navbar'>
-      <div>
-        <Link to='/' className={location.pathname === '/' ? 'active' : ''}>Home</Link>
-        <Link to='/about' className={location.pathname === '/about' ? 'active' : ''}>About</Link>
-        <Link to='/projects' className={location.pathname === '/projects' ? 'active' : ''}>Projects</Link>
-        <Link to='/contact' className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link>
-      </div>
+	  <ul className='nav-tabs'>
+        <li><Link to='/' className={location.pathname === '/' ? 'tab active' : ''}>Home</Link></li>
+        <li><Link to='/about' className={location.pathname === '/about' ? 'tab active' : ''}>About</Link></li>
+        <li><Link to='/projects' className={location.pathname === '/projects' ? 'tab active' : ''}>Projects</Link></li>
+        <li><Link to='/contact' className={location.pathname === '/contact' ? 'tab active' : ''}>Contact</Link></li>
+	  </ul>
     </nav>
   );
 }

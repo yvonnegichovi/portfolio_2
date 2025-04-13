@@ -6,17 +6,21 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import './styles/Navbar.css';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App () {
   return (
     <Router>
 	  <Navbar /> {/* Make sure Navbar is inside Router! */}
+	  <div className="content">
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
+	  </div>
+	  <Footer />
     </Router>
   );
 }
