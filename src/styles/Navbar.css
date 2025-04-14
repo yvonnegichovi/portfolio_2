@@ -1,52 +1,64 @@
 .navbar {
-	display: flex;
-	padding: 0 20px;
-	position: sticky;
-	cursor: pointer;
-	border-bottom: 1px solid #ccc;
+  background-color: white;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Remove underline from all links */
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-tabs {
   display: flex;
   list-style: none;
+  padding: 8px 10px 0 10px;
   margin: 0;
-  padding: 0;
   overflow-x: auto;
+  font-weight: 600;
 }
 
-.navbar li {
-	display: inline;
-	flex-direction: row;
-	padding: 5px 10px;
-	border: 1px solid white;
+.nav-tabs li {
+  margin-right: 8px;
+  padding: 0 10px;
+  margin-top: 5px;
 }
 
+/* This class is used in both active and inactive tabs */
 .tab {
-  display: inline-block;
-  padding: 10px 30px;
-  color: white;
-  text-decoration: none;
-  border: 1px solid transparent;
-  border-bottom: none;
-  background-color: transparent;
+  padding: 10px 20px;
+  color: #333;
+  background-color: #d3d3d3;
+  border: 1.5px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  border-radius: 10px 10px 0 0;
   transition: all 0.3s ease;
-  font-weight: 500;
-  border-radius: 8px 8px 0 0;
+  display: inline-block;
+  margin-bottom: -2px; /* to visually sit under the navbar border */
+  position: relative;
+  z-index: 0;
 }
 
 .tab:hover {
-  background-color: #ddd;
+  background-color: #c5c5c5;
 }
 
+/* Active tab sits "on top" of the navbar */
 .tab.active {
-  background-color: black;
-  border: 1px solid #ccc;
+  background-color: white;
   border-bottom: none;
-  color: #fff;
+  color: black;
+  z-index: 2;
+  margin-bottom: 0;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
-  z-index: 1;
 }
 
-.navbar:hover {
-	color: green;
+/* Optional hover color for navbar text */
+.nav-tabs li:hover {
+  color: #d3d3d3;
 }
+
