@@ -7,11 +7,12 @@ import Contact from './pages/Contact';
 import './styles/Navbar.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Layout from './components/Layout';
 
 function App () {
   return (
     <Router>
-	  <Navbar /> {/* Make sure Navbar is inside Router! */}
+	  <Layout> {/* Make sure Navbar is inside Router! */}
 	  <div className="content">
       <Routes>
         <Route path='/' element={<Home />} />
@@ -20,7 +21,7 @@ function App () {
         <Route path='/contact' element={<Contact />} />
       </Routes>
 	  </div>
-	  <Footer />
+	  </Layout>
     </Router>
   );
 }

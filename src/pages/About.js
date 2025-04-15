@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/About.css';
+import backgroundImage from '../assets/background.jpeg';
 
 const skills = [
 	{ name: 'Javascript (Es6+)', level: 8 },
@@ -16,6 +17,7 @@ const skills = [
 
 function About () {
   return (
+	  <div className="about-background" style={{ backgroundImage: `url(${backgroundImage})` }}>
 	  <div className="about-container">
 	  <h1>About Me</h1>
 	  <p>
@@ -35,6 +37,7 @@ function About () {
 		  </div>
 		  </div>
 	  ))}
+	  </div>
 	  </div>
 	  </div>
   );

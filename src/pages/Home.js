@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Import router
 import '../styles/Home.css'; // Import the CSS file
 import profileImage from '../assets/profile.png';
+import Layout from '../components/Layout';
 
 function Home () {
   return (
