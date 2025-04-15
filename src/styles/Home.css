@@ -23,9 +23,10 @@ section p, section ul {
 }
 
 .profile-img {
-  width: 200px;
+  width: auto;
   height: auto;
   border-radius: 10px;
   margin: 20px 0;
+  background-color: transparent;
 }
 

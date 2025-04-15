@@ -1,0 +1,54 @@
+.contact-container {
+  padding: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: black;
+  background-color: #d3d3d3;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.contact-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.contact-container a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+}
+
+.download {
+	font-weight: 700;
+	font-size: 24px;
+	padding-top: 30px;
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #0077cc;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #005fa3;
+}
+

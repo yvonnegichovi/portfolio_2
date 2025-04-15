@@ -11,12 +11,6 @@ function Home () {
 	  <section id="home">
 	  <img src={profileImage} alt="Profile" className="profile-img" />
 	  </section>
-	  <section id="contact">
-	  <h2>Contact Me</h2>
-	  <p>Email: yvonnegichovi@gmail.com</p>
-	  <p>GitHub: <a href="https://github.com/yvonnegichovi" target="_blank" rel="noreferrer">github.com/yvonnegichovi</a></p>
-	  <p>LinkedIn: <a href="https://www.linkedin.com/in/yvonne-gichovi-2b0753223/" target="_blank" rel="noreferrer">linkedin.com/in/yvonnegichovi</a></p>
-	  </section>
 	  </>
   );
 }
