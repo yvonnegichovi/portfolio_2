@@ -1,17 +1,18 @@
 {
   "dependencies": {
     "@shadcn/ui": "^0.0.4",
+    "express": "^5.1.0",
     "framer-motion": "^12.5.0",
     "react-router-dom": "^6.30.0",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.3",
     "tailwindcss": "^4.0.14"
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0",
-    "react-scripts": "^5.0.1"
+    "gh-pages": "^6.3.0"
   },
   "scripts": {
-	"start": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "vercel --prod"
   },
@@ -26,5 +27,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "name": "portfolio_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
