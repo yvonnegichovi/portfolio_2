@@ -1,4 +1,8 @@
-~/portfolio_2/node_modules/*
-~/portfolio_2/.gitignore
-node_modules
-~/portfolio_2/node_modules/
+# Dependencies
+/node_modules
+
+# Production build
+/build
+
+# venv (Python virtual environment)
+/venv
